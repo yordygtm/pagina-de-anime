@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+
+}
+
+.container {
+
+    width: 100%;
+    height: 200vh;
+    /*background-color: rgb(17, 17, 17);*/
+    background-image: url(/imagenes/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.elheader {
+    color: white;
+    padding-top: 80px;
+    position: absolute;
+    font-size: 25px;
+
+}
+
+.logo {
+    width: 10%;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider--inner {
+
+    left: 5%;
+    right: 5%;
+    top: 30%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+}
+
+.slider--inner2 {
+
+    left: 5%;
+    right: 5%;
+    top: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+img {
+    border: 2px solid;
+    border-radius: 25px 25px 25px 25px;
+    margin: auto;
+    width: 100%;
+
+}
+
+.estreno {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    bottom: 80%;
+    left: 3%;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tpeliculas {
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 108%;
+    bottom: 0%;
+    left: 35%;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*p1*/
+
+.card {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 120%;
+    left: 20%;
+
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card .front {
+    transform: perspective(500px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .back {
+    transform: perspective(500px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    font-size: 11px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card .back .link {
+    border-top: solid 1px #000000;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+/*p2*/
+.card2 {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 120%;
+    left: 35%;
+
+}
+
+.card2 .face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card2 .front2 {
+    transform: perspective(500px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card2 .front2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .back2 {
+    transform: perspective(500px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    font-size: 11px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card2 .back2 .link2 {
+    border-top: solid 1px #000000;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+/*p3*/
+.card3 {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 120%;
+    left: 50%;
+
+}
+
+.card3 .face3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card3 .front3 {
+    transform: perspective(500px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card3 .front3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 .back3 {
+    transform: perspective(500px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    font-size: 11px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card3 .back3 .link3 {
+    border-top: solid 1px #000000;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+/*p4*/
+.card4 {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 120%;
+    left: 65%;
+
+}
+
+.card4 .face4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card4 .front4 {
+    transform: perspective(500px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card4 .front4 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card4 .back4 {
+    transform: perspective(500px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    font-size: 11px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card4 .back4 .link4 {
+    border-top: solid 1px #000000;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    
+    
+}
+
+.footer img{
+    position: relative;
+    width: 5%;
+    height: 5;
+   left: 40%;
+}
+.footer h5{
+    position: relative;
+    top: 300%;
+    bottom: 40px;
+}
+
+
+/*hovers*/
+
+
+.navbar ul li:hover {
+    transform: scale(110%);
+
+}
+
+.slider--inner a:hover {
+    transform: scale(115%);
+}
+
+.slider--inner2 a:hover {
+    transform: scale(114%);
+}
+
+/*p1hover*/
+
+.card:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+/*p2hover*/
+.card2:hover .front2 {
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card2:hover .back2 {
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+/*p3hover*/
+.card3:hover .front3 {
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card3:hover .back3 {
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+/*p4hover*/
+.card4:hover .front4 {
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card4:hover .back4 {
+    transform: perspective(500px) rotateY(360deg);
+
+}
